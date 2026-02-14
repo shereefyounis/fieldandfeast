@@ -62,3 +62,71 @@ table {
 
 
 /* ROOT VARIABLES */
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+
+    --font: 'Playfair Display';
+}
+
+
+
+/* GLOBAL STYLES (mobile first/small) */
+
+
+/* Font */
+h1, h2, p, a, li{
+    font-family: var(--font);
+}
+
+
+/* Body */
+body {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--midnight-blue);
+    padding-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+    margin: 20px 0 20px 0;
+}
+
+header h1 {
+    color: var(--soft-white);
+    font-size: 3.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header p {
+    color: var(--soft-white);
+    font-style: italic;
+}
+
+
+/* Navigation */
+nav ul {
+    background-color: var(--champagne-gold);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+nav a {
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
