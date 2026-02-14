@@ -84,10 +84,21 @@ h1, h2, p, a, li{
 }
 
 
+/* Section Line (Lines between sections)*/
+.section-line {
+    border: 0;
+    height: 2px;
+    background-color: var(--champagne-gold);
+    margin: 20px 0 20px 0;
+}
+
+
 /* Body */
-body {
-    max-width: 450px;
-    margin: 0 auto;
+@media screen and (max-width: 450px) {
+    body {
+        max-width: 450px;
+        margin: 0 auto;
+    }
 }
 
 
@@ -119,9 +130,10 @@ header p {
 /* Navigation */
 nav ul {
     background-color: var(--champagne-gold);
-    display: flex;
-    justify-content: space-around;
-    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 12px 0;
 }
 
 nav a {
@@ -129,4 +141,28 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+
+/* Main */
+main {
+    background-color: var(--soft-white);
+    padding: 0 25px 0 25px;
+}
+
+
+/* About Us Section */
+#about-us {
+    color: var(--midnight-blue); 
+    background-color: var(--soft-white);
+    padding-top: 50px;
+}
+
+#about-us h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#about-us p {
+    color: var(--dark-charcoal);
 }
