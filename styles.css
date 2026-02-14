@@ -84,6 +84,16 @@ h1, h2, p, a, li{
 }
 
 
+/* Making the heading text abit bold, allowing them to popout more */
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+}
+
+
 /* Section Line (Lines between sections)*/
 .section-line {
     border: 0;
@@ -165,4 +175,37 @@ main {
 
 #about-us p {
     color: var(--dark-charcoal);
+}
+
+
+/* Offerings Section */
+#offerings h2 {
+    color: var(--midnight-blue);
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#offerings section {
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+
+    /* Border shading effects */
+    box-shadow: 0 2px 8px var(--dark-charcoal);
+}
+
+#offerings section h2 {
+    color: var(--linen);
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+
+#offerings section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0 5px 0;
 }
