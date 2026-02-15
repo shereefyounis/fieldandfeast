@@ -86,11 +86,11 @@ h1, h2, p, a, li{
 
 /* Making the heading text abit bold, allowing them to popout more */
 h2 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 p {
-    font-weight: 200;
+    font-weight: 250;
 }
 
 
@@ -104,11 +104,8 @@ p {
 
 
 /* Body */
-@media screen and (max-width: 450px) {
-    body {
-        max-width: 450px;
-        margin: 0 auto;
-    }
+body{
+    width: 100%;
 }
 
 
@@ -156,15 +153,14 @@ nav a {
 
 /* Main */
 main {
-    background-color: var(--soft-white);
+    background-color: var(--linen);
     padding: 0 25px 0 25px;
 }
 
 
 /* About Us Section */
 #about-us {
-    color: var(--midnight-blue); 
-    background-color: var(--soft-white);
+    color: var(--midnight-blue);
     padding-top: 50px;
 }
 
@@ -175,6 +171,7 @@ main {
 
 #about-us p {
     color: var(--dark-charcoal);
+    line-height: 1.5;
 }
 
 
@@ -198,14 +195,72 @@ main {
 }
 
 #offerings section h2 {
-    color: var(--linen);
+    color: var(--soft-white);
     font-size: 1.6em;
     padding-bottom: 0px;
     font-weight: bold;
+}
+
+#offerings section p {
+    color: var(--soft-white);
 }
 
 #offerings section ul {
     list-style-type: disc;
     list-style-position: inside;
     padding: 5px 0 5px 0;
+}
+
+
+/* Gallery Section */
+#gallery h2 {
+    color: var(--midnight-blue);
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#gallery p {
+    color: var(--dark-charcoal);
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+#gallery .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#gallery .gallery-container > div {
+    background-color: var(--soft-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--dark-charcoal);
+}
+
+#gallery .gallery-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#gallery .gallery-container p {
+    color: var(--dark-charcoal);
+    font-style: italic;
+    padding: 5px 0 10px 0;
+    font-size: 0.9em;
+}
+
+#gallery .full-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--soft-white);
+    background-color: var(--olive-green);
+    text-decoration: none;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
 }
