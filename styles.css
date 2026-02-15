@@ -2,9 +2,13 @@
 
 
 
+
+
 /* IMPORTED FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 
 
 
@@ -61,6 +65,8 @@ table {
 
 
 
+
+
 /* ROOT VARIABLES */
 :root {
     --midnight-blue: #1F2A44;
@@ -72,6 +78,8 @@ table {
 
     --font: 'Playfair Display';
 }
+
+
 
 
 
@@ -99,7 +107,7 @@ p {
     border: 0;
     height: 2px;
     background-color: var(--champagne-gold);
-    margin: 20px 0 20px 0;
+    margin: 25px 0 30px 0;
 }
 
 
@@ -263,4 +271,30 @@ main {
     text-align: center;
     border-radius: 8px;
     font-weight: bold;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 80px 0 50px 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer p, footer a {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--champagne-gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-media {
+    margin-top: 50px;
 }
