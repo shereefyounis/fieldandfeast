@@ -152,7 +152,7 @@ nav a {
 /* Main */
 main {
     background-color: var(--linen);
-    padding: 0 25px 0 25px;
+    padding: 0 30px 0 30px;
 }
 
 
@@ -183,7 +183,7 @@ main {
 #offerings section {
     background-color: var(--olive-green);
     color: var(--soft-white);
-    padding: 15px;
+    padding: 16px 20px 16px 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     line-height: 1.5;
@@ -226,8 +226,7 @@ main {
 #gallery .gallery-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
+    
     padding-bottom: 20px;
 }
 
@@ -248,9 +247,10 @@ main {
 #gallery .gallery-container p {
     color: var(--dark-charcoal);
     font-style: italic;
-    padding: 5px 0 10px 0;
     font-size: 0.9em;
     font-weight: 500;
+    text-align: center;
+    padding: 8px;
 }
 
 #gallery .full-gallery {
@@ -308,7 +308,7 @@ footer .social-media {
         grid-column: 1 / -1;
         padding-bottom: 10px;
     }
-    
+
     #offerings-one {
         grid-column: 1;
         grid-row: 2;
@@ -330,13 +330,10 @@ footer .social-media {
     
     #gallery .gallery-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    #gallery .gallery-container p {
-        padding: 5px 11px 10px 11px;
+        gap: 20px;
     }
 }
+
 
 
 
@@ -347,7 +344,6 @@ footer .social-media {
     #gallery .gallery-container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
     }
 
     #gallery .gallery-container .image-one {
@@ -374,6 +370,10 @@ footer .social-media {
         grid-column: 2;
         grid-row: 2;
     }
+
+    #gallery .gallery-container p {
+        padding: 8px 14px 8px 14px;
+    }
 }
 
 
@@ -393,7 +393,6 @@ footer .social-media {
     #gallery .gallery-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-        gap: 15px;
     }
 
     #gallery .gallery-container .image-one {
@@ -419,5 +418,9 @@ footer .social-media {
     #gallery .gallery-container .image-five {
         grid-column: 5;
         grid-row: 1;
+    }
+
+    #gallery .gallery-container p {
+        padding: 8px 14px 8px 14px;
     }
 }
