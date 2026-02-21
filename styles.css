@@ -98,7 +98,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -120,6 +120,7 @@ p {
 body{
     width: auto;
     font-family: var(--font);
+    background-color: var(--linen);
 }
 
 
@@ -165,8 +166,7 @@ nav a {
 
 /* Main */
 main {
-    background-color: var(--linen);
-    padding: 0 30px 0 30px;
+    padding: 0 25px 0 25px;
 }
 
 
@@ -195,7 +195,7 @@ main {
 #offerings section {
     background-color: var(--olive-green);
     color: var(--soft-white);
-    padding: 16px 20px 16px 20px;
+    padding: 16px;
     margin-bottom: 20px;
     border-radius: 8px;
     line-height: 1.5;
@@ -259,7 +259,7 @@ main {
     font-style: italic;
     font-weight: 500;
     text-align: center;
-    padding: 8px;
+    padding: 8px 3px 8px 3px;
 }
 
 #gallery .full-gallery {
@@ -280,7 +280,7 @@ footer {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 80px 0 50px 0;
+    padding: 80px 0 25px 0;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -306,6 +306,10 @@ footer .social-media {
 
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px) {
+    main{
+        padding: 0 30px 0 30px;
+    }
+
     #offerings {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -350,6 +354,10 @@ footer .social-media {
 
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {
+    main{
+        padding: 0 40px 0 40px;
+    }
+
     #gallery .gallery-container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -391,32 +399,15 @@ footer .social-media {
 
 /* MEDIA QUERY (XL) */
 @media screen and (min-width: 1200px) {
-    body{
-        background-color: var(--linen);
-    }
     main {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 180px 0 180px;
     }
     
     #gallery .gallery-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-    }
-
-    #gallery .gallery-container .image-one {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    #gallery .gallery-container .image-two {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #gallery .gallery-container .image-three {
-        grid-column: 3;
-        grid-row: 1;
     }
 
     #gallery .gallery-container .image-four {
@@ -430,6 +421,6 @@ footer .social-media {
     }
 
     #gallery .gallery-container p {
-        padding: 8px 14px 8px 14px;
+        padding: 8px 10px 8px 10px;
     }
 }
