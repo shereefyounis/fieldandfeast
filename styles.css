@@ -166,7 +166,6 @@ nav a {
 
 /* Main */
 main {
-    margin: 0 auto;
     padding: 0 25px 0 25px;
 }
 
@@ -308,7 +307,6 @@ footer .social-media {
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px) {
     main{
-        margin: 0 auto;
         padding: 0 30px 0 30px;
     }
 
@@ -357,7 +355,6 @@ footer .social-media {
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {
     main{
-        margin: 0 auto;
         padding: 0 40px 0 40px;
     }
 
@@ -403,7 +400,6 @@ footer .social-media {
 /* MEDIA QUERY (XL) */
 @media screen and (min-width: 1200px) {
     main {
-        margin: 0 auto;
         padding: 0 180px 0 180px;
     }
     
