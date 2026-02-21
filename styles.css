@@ -86,10 +86,26 @@ table {
 /* GLOBAL STYLES (mobile first/small) */
 
 
-/* Making the heading text abit bold, allowing them to popout more */
-h2, h3 {
+/* Fonts */
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
     font-weight: 500;
 }
+
+h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
 
 /* Section Line (Lines between sections)*/
 .section-line {
@@ -121,8 +137,6 @@ header img {
 
 header h1 {
     color: var(--soft-white);
-    font-size: 3.2em;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -144,7 +158,7 @@ nav ul {
 nav a {
     color: var(--midnight-blue);
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
@@ -163,7 +177,6 @@ main {
 }
 
 #about-us h2 {
-    font-size: 2em;
     padding-bottom: 10px;
 }
 
@@ -176,7 +189,6 @@ main {
 /* Offerings Section */
 #offerings h2 {
     color: var(--midnight-blue);
-    font-size: 2em;
     padding-bottom: 20px;
 }
 
@@ -194,9 +206,7 @@ main {
 
 #offerings section h3 {
     color: var(--soft-white);
-    font-size: 1.7em;
     padding-bottom: 0px;
-    font-weight: bold;
 }
 
 #offerings section p {
@@ -213,7 +223,6 @@ main {
 /* Gallery Section */
 #gallery h2 {
     color: var(--midnight-blue);
-    font-size: 2em;
     padding-bottom: 10px;
 }
 
@@ -226,7 +235,7 @@ main {
 #gallery .gallery-container {
     display: grid;
     grid-template-columns: 1fr;
-    
+    gap: 20px;
     padding-bottom: 20px;
 }
 
@@ -240,14 +249,14 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
-    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #gallery .gallery-container p {
     color: var(--dark-charcoal);
-    font-style: italic;
     font-size: 0.9em;
+    font-style: italic;
     font-weight: 500;
     text-align: center;
     padding: 8px;
